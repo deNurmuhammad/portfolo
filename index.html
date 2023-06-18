@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <div class="menuToggle"></div>
+            <ul>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <section id="home">
+            <div class="content">
+                <h2>Abdusalomov Nurmuhammad</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur a quidem aliquid laudantium!
+                    Numquam consectetur esse voluptate ipsam aut! Laboriosam quos ratione eum ipsam atque vel placeat
+                    sapiente ipsa.</p>
+                <a href="#" class="btn">Contact Me</a>
+            </div>
+            <img src="img/20220901_175529.jpg" class="men">
+        </section>
+        <section id="service">
+            <div class="secText">
+                <h2>Men nimaga yahshiman </h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio ipsam dolorum aspernatur, dolorem
+                    quasi quisquam beatae ut quam, quia non at autem amet nesciunt quas.</p>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <img src="img/icon.4.png" alt="">
+                    <h3>Veb Dizayn </h3>
+                </div>
+                <div class="servicesBx">
+                    <img src="img/icon2.png" alt="">
+                    <h3>
+                        Veb ishlab chiqish </h3>
+                </div>
+                <div class="servicesBx">
+                    <img src="img/icon1.png" alt="">
+                    <h3>Android uchun ilovalar </h3>
+                </div>
+                <div class="servicesBx">
+                    <img src="img/icon3.png" alt="">
+                    <h3>
+                        Video tahrirlash </h3>
+                </div>
+            </div>
+            <div class="center">
+                <a href="#" class="btn">Hire Me</a>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="secText">
+                <h2>Mening eng yaxshi asarlarim to'plami </h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio ipsam dolorum aspernatur, dolorem
+                    quasi quisquam beatae ut quam, quia non at autem amet nesciunt quas.</p>
+            </div>
+            <div class="content">
+                <div class="imgBx">
+                    <img src="img/img1.png" alt="">
+                </div>
+                <div class="imgBx">
+                    <img src="img/img2.png" alt="">
+                </div>
+                <div class="imgBx">
+                    <img src="img/img3.png" alt="">
+                </div>
+                <div class="imgBx">
+                    <img src="img/img4.png" alt="">
+                </div>
+                <div class="imgBx">
+                    <img src="img/img5.png" alt="">
+                </div>
+                <div class="imgBx">
+                    <img src="img/img6.png" alt="">
+                </div>
+            </div>
+            <div class="center">
+                <a href="#" class="btn">View More </a>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="secText">
+                <h2>
+                    Men bilan bog'lanish usullari    </h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, in harum similique veniam vero ipsum nemo autem quas itaque esse cum voluptate saepe ad. Alias quisquam optio quis nobis aspernatur ad, vitae est quibusdam unde odio, dignissimos expedita magnam vel?</p>
+            </div>
+            <div class="content">
+                <a href="#">
+                    <ion-icon name="mail-outline"></ion-icon>
+                   Abdusalomov@email.name
+                </a>
+                <a href="#">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    +998 99 999 99 99   
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-skype"></ion-icon>skype
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                    whatsapp
+                </a>
+            </div>
+            <div class="center">
+                    <p class="copyrights">
+                        Mualliflik huquqi <a href="#">
+                       It Booster
+                    </a>. 
+                    Barcha huquqlar himoyalangan.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+<script>
+    let list = document.querySelectorAll('.nav li');
+    function active (){
+        list.forEach((i) => 
+        i.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((i) => 
+    i.addEventListener('click', active));
+
+    let menuToggle = document.querySelector('.menuToggle');
+    let header = document.querySelector('header');
+    menuToggle.onlick = function(){
+        header.classList.toggle('active');
+
+    }
+</script>
+</body>
+
+</html>
